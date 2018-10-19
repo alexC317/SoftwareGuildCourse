@@ -2,28 +2,33 @@
 <!--
   Name: Alex Cepeda
   Date Created: 10/16/2018
-  Most recent revision: 10/17/2018
+  Most recent revision: 10/19/2018
 -->
 
 <html lang="en">
+  <!-- Head Section -->
   <head>
-    <title>Alex Cepeda's Portfolio</title>
+    <title>Alex Cepeda's Portfolio</title> <!-- Sets the name for the page tab -->
+    <style>
+
+    </style>
   </head>
 
+  <!-- Body Section -->
   <body>
     <main>
+      <!-- Header section: This will containa header for the whole page -->
       <header>
         <h1>Portfolio for Alex Cepeda</h1>
       </header>
 
-      <nav>
-        <hr />
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact Me</a>
-        <a href="testimonials.html">Testimonials</a>
-        <hr />
+      <nav class = "border"> <!-- The nav element will include navigation buttons or links -->
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="contact.html">Contact Me</a></p>
+        <p><a href="testimonials.html">Testimonials</a></p>
       </nav>
 
+      <!-- Contains links to jump to other part of the page -->
       <section>
         <h2><em>Index:</em></h2>
         <ol>
@@ -32,19 +37,24 @@
           <li><a href="#hobbies">Hobbies</a></li>
         </ol>
       </section>
+
+      <!-- This section gives a little bit of background about me -->
       <section>
-        <article id="aboutMe">
+        <article id="aboutMe" class="border">
           <h2><em>About Me</em></h2>
           <img src="images/profile600.jpg" alt="Picture of me looking at a rainbow">
 
           <p>Hi! My name is Alex, I am an aspiring web developer born and raised in Queens, New York. Computers have long been an interest of mine; when I was in Kindergarten, I once asked a teacher when we were going to work with computers!</p>
 
           <p>My path to becoming a web developer began at the <strong>Bronx High School of Science</strong>, when I took a few programming classes, wanting to learn how to code. I grew quickly to appreciate Java and the concepts behind object-oriented programming. From there, I majored in Computer Science at <strong>Hunter College</strong>, receiving my Bachelor's Degree. Now I am currently enrolled in the Java-based Web Development course at the <strong>LaGuardia TechHire program</strong>!</p>
-        </article>
+        </article><br />
 
-        <article id="pastExperiences">
+        <!-- This section provides my past work experience -->
+        <article id="pastExperiences" class="border">
           <h2><em>Past Experiences</em></h2>
           <img src="images/work600.jpg" alt="">
+
+          <!-- This work information is in a table -->
           <table>
             <caption>Employment History</caption>
             <tr>
@@ -73,11 +83,14 @@
               <td>Barnes & Noble College</td>
             </tr>
           </table>
-        </article>
+        </article><br />
 
-        <article id="hobbies">
+        <!-- This article is about my hobbies -->
+        <article id="hobbies" class="border">
           <h2><em>Hobbies</em></h2>
-          <img src="images/dnd600.jpg" alt="my friends playing D&D">
+          <img src="images/dnd2_600.jpg" alt="D&D setup">
+
+          <!-- This list contains my interests -->
           <ul>
             <li>Board Games</li>
             <ol>
@@ -108,10 +121,13 @@
             </ul>
           </ul>
         </article>
-      <footer>
-        <hr />
-        <p>&copy; 2020 Alex Cepeda. All rights reserved.</p>
-      </footer>
+
+        <!-- The footer for the page -->
+        <footer>
+          <hr />
+          <p>&copy; 2020 Alex Cepeda. All rights reserved.</p>
+        </footer>
+
     </main>
   </body>
 </html>
