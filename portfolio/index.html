@@ -2,95 +2,149 @@
 <!--
   Name: Alex Cepeda
   Date Created: 10/16/2018
-  Most recent revision: 10/19/2018
+  Most recent revision: 10/21/2018
 -->
 
 <html lang="en">
-  <!-- Head Section -->
-  <head>
-    <title>Alex Cepeda's Portfolio</title> <!-- Sets the name for the page tab -->
-    <style>
 
-    </style>
-  </head>
+<!-- Head Section -->
 
-  <!-- Body Section -->
-  <body>
-    <main>
-      <!-- Header section: This will containa header for the whole page -->
-      <header>
-        <h1>Portfolio for Alex Cepeda</h1>
-      </header>
+<head>
+  <title>Alex Cepeda's Portfolio</title> <!-- Sets the name for the page tab -->
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <style>
+    /* Sets the styling for the table caption*/
+    caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
 
-      <nav class = "border"> <!-- The nav element will include navigation buttons or links -->
-        <p><a href="projects.html">Projects</a></p>
-        <p><a href="contact.html">Contact Me</a></p>
-        <p><a href="testimonials.html">Testimonials</a></p>
-      </nav>
+    /* Sets the styling for the table, the table headers and the table cells */
+    table,
+    th,
+    td {
+      border: 1px solid #0d1f2d;
+      border-collapse: collapse;
+      padding: 5px 10px;
+    }
 
-      <!-- Contains links to jump to other part of the page -->
-      <section>
-        <h2><em>Index:</em></h2>
-        <ol>
-          <li><a href="#aboutMe">About Me</a></li>
-          <li><a href="#pastExperiences">Past Experiences</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-        </ol>
-      </section>
+    /* Sets for the styling for only the table */
+    table {
+      width: 90%;
+      margin: auto;
+    }
 
-      <!-- This section gives a little bit of background about me -->
-      <section>
-        <article id="aboutMe" class="border">
-          <h2><em>About Me</em></h2>
-          <img src="images/profile600.jpg" alt="Picture of me looking at a rainbow">
+    /* Sets the styling for the table rows */
+    tr {
+      height: 30px;
+    }
 
-          <p>Hi! My name is Alex, I am an aspiring web developer born and raised in Queens, New York. Computers have long been an interest of mine; when I was in Kindergarten, I once asked a teacher when we were going to work with computers!</p>
+    /* Sets the styling for the table headers */
+    th {
+      background-color: #546a7b;
+      color: #f2eded;
+    }
 
-          <p>My path to becoming a web developer began at the <strong>Bronx High School of Science</strong>, when I took a few programming classes, wanting to learn how to code. I grew quickly to appreciate Java and the concepts behind object-oriented programming. From there, I majored in Computer Science at <strong>Hunter College</strong>, receiving my Bachelor's Degree. Now I am currently enrolled in the Java-based Web Development course at the <strong>LaGuardia TechHire program</strong>!</p>
-        </article><br />
+    /* Changes the color of every other row */
+    tr:nth-child(odd) {
+      background-color: #e4c3ad;
+    }
+  </style>
+</head>
 
-        <!-- This section provides my past work experience -->
-        <article id="pastExperiences" class="border">
-          <h2><em>Past Experiences</em></h2>
-          <img src="images/work600.jpg" alt="">
+<!-- Body Section -->
 
-          <!-- This work information is in a table -->
+<body>
+  <main>
+    <!-- Header section: This will contain a header for the whole page -->
+    <header>
+      <h1>Portfolio for Alex Cepeda</h1>
+    </header>
+
+    <nav class="border">
+      <!-- The nav element will include navigation buttons or links -->
+      <p><a href="projects.html">Projects</a></p>
+      <p><a href="contact.html">Contact Me</a></p>
+      <p><a href="testimonials.html">Testimonials</a></p>
+      <div class="clear-float"></div>
+    </nav>
+
+    <!-- Contains links to jump to other part of the page -->
+    <section>
+      <h2><em>Index:</em></h2>
+      <ol>
+        <li><a href="#aboutMe">About Me</a></li>
+        <li><a href="#pastExperiences">Past Experiences</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ol>
+    </section>
+
+    <!-- This section gives a little bit of background about me -->
+    <section>
+      <article id="aboutMe" class="border">
+        <h2><em>About Me</em></h2>
+        <img src="images/profile600.jpg" alt="Picture of Alex Cepeda" width="250">
+
+        <p>Hi! My name is Alex, I am an aspiring web developer born and raised in Queens, New York. Computers have long been an interest of mine; when I was in Kindergarten, I once asked a teacher when we were going to work with computers!</p>
+
+        <p>My path to becoming a web developer began at the <strong>Bronx High School of Science</strong>, when I took a few programming classes, wanting to learn how to code. I grew quickly to appreciate Java and the concepts behind object-oriented
+          programming. From there, I majored in Computer Science at <strong>Hunter College</strong>, receiving my Bachelor's Degree. Now I am currently enrolled in the Java-based Web Development course at the <strong>LaGuardia TechHire program</strong>!</p>
+
+        <div class="clear-float"></div>
+      </article><br />
+
+      <!-- This section provides my past work experience -->
+      <article id="pastExperiences" class="border">
+        <h2><em>Past Experiences</em></h2>
+        <img src="images/work600.jpg" alt="Picture of a book" width="250">
+
+        <!-- This work information is in a table -->
+        <div class="right-content">
           <table>
             <caption>Employment History</caption>
-            <tr>
-              <th>Years Employed</th>
-              <th>Title</th>
-              <th>Employer</th>
-            </tr>
-            <tr>
-              <td>2018-Present</td>
-              <td>Apprentice</td>
-              <td>The Software Guild</td>
-            </tr>
-            <tr>
-              <td>2016-2018</td>
-              <td>Trade Manager</td>
-              <td>Barnes & Noble College</td>
-            </tr>
-            <tr>
-              <td>2015-2016</td>
-              <td>Trade Supervisor</td>
-              <td>Barnes & Noble College</td>
-            </tr>
-            <tr>
-              <td>2013-2015</td>
-              <td>Bookseller</td>
-              <td>Barnes & Noble College</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Years Employed</th>
+                <th>Title</th>
+                <th>Employer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2018-Present</td>
+                <td>Apprentice</td>
+                <td>The Software Guild</td>
+              </tr>
+              <tr>
+                <td>2016-2018</td>
+                <td>Trade Manager</td>
+                <td>Barnes & Noble College</td>
+              </tr>
+              <tr>
+                <td>2015-2016</td>
+                <td>Trade Supervisor</td>
+                <td>Barnes & Noble College</td>
+              </tr>
+              <tr>
+                <td>2013-2015</td>
+                <td>Bookseller</td>
+                <td>Barnes & Noble College</td>
+              </tr>
+            </tbody>
           </table>
-        </article><br />
+        </div>
+        <div class="clear-float"></div>
+      </article><br />
 
-        <!-- This article is about my hobbies -->
-        <article id="hobbies" class="border">
-          <h2><em>Hobbies</em></h2>
-          <img src="images/dnd2_600.jpg" alt="D&D setup">
+      <!-- This article is about my hobbies -->
+      <article id="hobbies" class="border">
+        <h2><em>Hobbies</em></h2>
+        <img src="images/dnd2_600.jpg" alt="D&D setup" width="250">
 
-          <!-- This list contains my interests -->
+        <!-- This list contains my interests -->
+        <!-- Ordered list -->
+        <div class="right-content">
           <ul>
             <li>Board Games</li>
             <ol>
@@ -106,6 +160,7 @@
             </ol>
           </ul>
 
+          <!-- Ordered list -->
           <ul>
             <li>Comic Books</li>
             <ul>
@@ -120,14 +175,17 @@
               <li>Logic</li>
             </ul>
           </ul>
-        </article>
+        </div>
+        <div class="clear-float"></div>
+      </article>
 
-        <!-- The footer for the page -->
-        <footer>
-          <hr />
-          <p>&copy; 2020 Alex Cepeda. All rights reserved.</p>
-        </footer>
+      <!-- The footer for the page -->
 
-    </main>
-  </body>
+      <footer>
+        <p>&copy; 2020 Alex Cepeda. All rights reserved.</p>
+      </footer>
+
+  </main>
+</body>
+
 </html>

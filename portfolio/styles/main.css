@@ -1,0 +1,85 @@
+/*
+  Creator: Alex Cepeda
+  Date created: 10/21/2018
+  Date last modified:
+*/
+
+/* Sets the background color, text color, and text font for the page */
+body {
+  background-color: #fef9ff;
+  font-family: arial, helvetica, sans-serif;
+  color: #0d1f2d;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Sets the styling for the page header /*/
+header, footer {
+  background-color: #5b7d87;
+  color: #fef9ff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+
+/* Sets the styling for the h1 tag */
+h1 {
+  font-size: 2.5em;
+}
+
+/* Sets the styling for the nav bar */
+nav{
+  border-top: 3px dashed #546a7b;
+  border-bottom: 3px dashed #546a7b;
+  margin-top: 4px;
+}
+
+/* Sets the styling for the buttons in the nav bar */
+nav a{
+  background-color: #5b7d87;
+  color: #fef9ff;
+  padding: 8px;
+  border: thin solid #0d1f2d;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: left;
+}
+
+/* Sets the styling if a link in the nav bar was visited recently */
+nav a:visited{
+  color: #e4c3ad;
+}
+
+/* Sets the styling if the pointer is over a link in the nav bar */
+nav a:hover{
+  background-color: #fef9ff;
+  color: #5b7d87;
+}
+
+/* Sets the styling when a link in the nav bar is pressed */
+nav a:active{
+  font-weight: bold;
+}
+
+/* Sets the styling for clear-float class */
+.clear-float{
+  clear:both; /* removes the float mode */
+}
+
+/* Sets the styling for the article tag */
+article{
+  margin-bottom: 16px;
+}
+
+/* Sets the styling for images within an article */
+article img{
+  float:left;
+}
+
+/* Sets the styling for the right-content class */
+.right-content{
+  float:left;
+}
