@@ -2,14 +2,20 @@
 <!--
   Name: Alex Cepeda
   Date Created: 10/17/2018
-  Latest Revision:
+  Latest Revision: 10/22/2018
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Contact Us</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+    .required{
+      font-weight: bold;
+    }
+    </style>
   </head>
 
   <body>
@@ -28,16 +34,16 @@
 
       <section>
         <form action="submit.html" method="POST">
-          <label for="name">Name: </label>
+          <label class="required" for="name">Name: </label>
           <input type="text" id="name" name="name"><br />
 
-          <label for="email">Email: </label>
+          <label class="required" for="email">Email: </label>
           <input type="text" id="email" name="email"><br />
 
-          <label for="phone">Phone: </label>
+          <label class="required" for="phone">Phone: </label>
           <input type="text" id="phone" name="phone"><br />
 
-          <label for="inquiry">Reason for Inquiry: </label>
+          <label class="required" for="inquiry">Reason for Inquiry: </label>
           <select id="inquiry" name="inquiry">
             <option value="catering" selected>Catering</option>
             <option value="party">Private Party</option>
@@ -45,16 +51,16 @@
             <option value="other">Other</option>
           </select><br />
 
-          <label for="information">Additional Information:</label>
+          <label class="required" for="information">Additional Information:</label>
           <textarea id="information" name="information"></textarea><br />
 
-          Have you been to the restaurant?
+          <label class="required" for="choice1">Have you been to the restaurant?</label>
           <input type="radio" id="choice1" name="question" value="no" checked>
           <label for="choice1">No</label>
           <input type="radio" id="choice1" name="question" value="yes">
           <label for"choice2">Yes</label><br />
 
-          Best days to contact you:
+          <label class="required" for="checkbox">Best days to contact you: </label>
           <input type="checkbox" id="monday" name="week" value="monday">
           <label for="monday">M</label>
           <input type="checkbox" id="tuesday" name="week" value="tuesday">
