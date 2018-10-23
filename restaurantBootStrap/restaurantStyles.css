@@ -1,0 +1,40 @@
+/*
+  Name: Alex Cepeda
+  Date Created: 10/22/2018
+  Latest Revision:
+*/
+
+.jumbotron{
+  background-color: #8D83B2;
+  border-bottom: thick black solid;
+}
+
+nav{
+  border-top: thick black solid;
+  border-bottom: thick black solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+  nav .btn{
+    background-color: #5b7d87;
+    color: #fef9ff;
+  }
+
+  /* Sets the background color, text color, and text shadow for the section element */
+  section{
+    background-color: #576A92;
+    color: #fffeff;
+    text-shadow: 2px 2px black; /* Suggested by Jason Chan */
+  }
+
+  /* Styles the footer sections */
+  footer {
+    padding-top: 10px;
+    border-top: thick black solid;
+    border-bottom: thick black solid;
+    background-color: #8D83B2;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+  }
