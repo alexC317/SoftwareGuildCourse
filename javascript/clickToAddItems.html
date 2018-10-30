@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="clickToAddItems.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <title>Click to Add Items</title>
   </head>
 
@@ -12,6 +11,7 @@
     <div class="container">
       <h1>Click to Add Items</h1>
       <form name="numberFun" onsubmit="return validateItems();" onreset="resetForm();" class="form-inline">
+
         <div class="form-group">
           <label for="num1">Num1</label>
           <input type="number" class="form-control" id="num1">
@@ -23,9 +23,9 @@
         </div>
 
         <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
-        <button type="reset" name="resetButton" class="btn">Reset</button>
+        <button type="reset" id="resetButton" class="btn">Reset</button>
       </form>
-      
+
       <table id="results" class="table table-striped" style="display:none;">
         <thead>
           <tr>
