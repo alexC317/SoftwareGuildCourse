@@ -5,36 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Display Evens</title>
-
+    <script type="text/javascript" src="displayEvens.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   </head>
   <body>
+    <!-- Sets up the container div for Bootstrap -->
     <div class="container">
-      <h1>Sample</h1>
-      <form name="calculator" class="form" onsubmit="return validateItems();" onreset="resetForm();">
+      <h1>Display Evens</h1> <!-- Heading for the page -->
+
+      <div class="row"><br></div> <!-- Adds a link break between the heading and our input forms -->
+
+      <!-- Sets up the form where users will enter the data they want to play with -->
+      <!-- Each entry field is restricted to number -->
+      <!-- We'll also need a way to make sure everything is correct -->
+      <form name="displayEvens" class="form" onsubmit="return validateItems();">
+
+        <!-- First text entry field, for the starting number -->
         <div class="form-group row">
           <label for="startNumber" class="col-3">Starting Number</label>
           <input type="number" id="startNumber">
         </div>
+
+        <!-- Second text entry field, for the ending number -->
         <div class="form-group row">
           <label for="endNumber" class="col-3">Ending Number</label>
           <input type="number" id="endNumber">
         </div>
+
+        <!-- Third text entry field, for the step number -->
         <div class="form-group row">
           <label for="stepNumber" class="col-3">Step</label>
           <input type="number" id="stepNumber">
-
         </div>
+
+        <!-- Submit button -->
+        <button type="submit" id="submitButton" class="form-group">Submit</button>
       </form>
 
+      <div id="results" class="" style="display:none">
 
-
+      </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 </html>
