@@ -1,0 +1,68 @@
+/*
+  Name: Alex Cepeda
+  Date Created: 10/22/2018
+  Latest Revision:
+*/
+
+/* Styles the jumbotron */
+.jumbotron{
+  background-color: #8D83B2;
+  border: thick black solid;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+}
+/* Styles the header sections
+header {
+  text-align: center;
+  font-size: 1.2em;
+  height: 100px;
+  padding: 10px 30px;
+
+}*/
+
+/* Styles the nav section */
+nav{
+  border-top: thick black solid;
+  border-bottom: thick black solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+/* Styles the anchor links in the nav bar when they have been visited */
+nav a:visited{
+  color:red;
+}
+
+/* Styles the anchor links in the nav bar when the pointer is hovering over it */
+nav a:hover {
+  font-weight: bold;
+}
+
+/* Styles the anchor links in the nav bar when they are being activated */
+nav a:active {
+  text-decoration: none;
+}
+
+nav .btn{
+  background-color: #5b7d87;
+  color: #fef9ff;
+}
+
+/* Sets the background color, text color, and text shadow for the section element */
+  section{
+    background-color: #576A92;
+    color: #fffeff;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px black; /* Suggested by Jason Chan */
+    width: 100%;
+  }
+
+
+/* Styles the footer sections */
+footer {
+  background-color: #8D83B2;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
