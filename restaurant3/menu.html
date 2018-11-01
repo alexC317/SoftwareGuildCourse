@@ -1,0 +1,220 @@
+<!--
+  Name: Alex Cepeda
+  Date Created: 10/17/2018
+  Latest Revision: 11/1/2018
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta information -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Menu</title> <!-- Sets the tab title -->
+
+  <!-- Imports the external CSS stylesheets -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- My CSS sheet -->
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+  <!-- Google Fonts CSS for Open Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Internal CSS style sheet -->
+  <style>
+    /*Sets the styling for both table captions */
+    caption {
+      font-size: 2em;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+
+    /* Makes all the table headers slightly bigger */
+    thead th {
+      font-size: 1.2em;
+    }
+
+    /* Aligns the text to the center for the first menu */
+    #menu1 {
+      text-align: center;
+    }
+
+    /* Sets a border around the table menu2 and centers */
+    table#menu2 {
+      border: 2px solid black;
+      border-collapse: collapse;
+      margin: auto;
+    }
+
+    /* Styles the table headers of menu2 to align left and have a border around them */
+    #menu2 thead th {
+      border: 2px solid black;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    /* Sets a left border for the body cells of menu2*/
+    #menu2 tbody td {
+      border-left: 2px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <!-- Header section, styled by the external style sheet -->
+    <header class = "jumbotron">
+      <h1>The Den</h1>
+      <h2 class="text-center">Now Opening New Location!</h2>
+      <h3 class="text-right font-italic">Est. 2018</h3>
+    </header>
+
+    <!-- Nav section -->
+    <nav>
+      <div class="row justify-content-center">
+        <a class="btn badge-pill col-2" href="index.html"><i class="material-icons">home</i> Home</a>
+        <div class="col-2"></div>
+        <a class="btn badge-pill col-2" href="menu.html"><i class="material-icons">fastfood</i> Menu</a>
+        <div class="col-2"></div>
+        <a class="btn badge-pill col-2" href="contact.html"><i class="material-icons">people</i> Contact Us</a>
+      </div>
+    </nav>
+
+    <!-- First table, menu1 -->
+    <section>
+      <table id="menu1" width="100%">
+        <caption>Our Offerings</caption>
+        <thead>
+          <tr>
+            <th>Burger and Fries</th>
+            <th>Hot Dog and Chips</th>
+            <th>Italian Sausage and Peppers</th>
+        </thead>
+        </tr>
+        <tbody>
+          <tr>
+            <td>An American Classic!</td>
+            <td>A Summer Classic!</td>
+            <td>An All-Time Favorite!</td>
+          </tr>
+          <tr>
+            <td>Your choice - with or without cheese</td>
+            <td>Your choice - white or wheat bun</td>
+            <td>Your choice - mild or spicy Cole Slaw</td>
+          </tr>
+          <tr>
+            <td>Pickle, onion, tomato, and lettuce</td>
+            <td>Relish, mustard, and ketchup</td>
+            <td>Served with garlic mashers</td>
+          </tr>
+          <tr>
+            <td>Served with our famous thick cut french fries</td>
+            <td>Served with our house-made chips</td>
+            <td>$10.95</td>
+          </tr>
+          <tr>
+            <td>$7.95</td>
+            <td>$7.95</td>
+          </tr>
+        </tbody>
+
+        <br />
+
+        <!-- Second part of menu1 -->
+        <thead>
+          <tr>
+            <th>Tenderloin Sandwich and Chips</th>
+            <th>House Salad</th>
+            <th>Brisket Sandwich and Fries</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Really Hits the Spot!</td>
+            <td>On the Lighter Side</td>
+            <td>A Taste of Texas!</td>
+          </tr>
+          <tr>
+            <td>Plain or Sesame Seed Bun</td>
+            <td>Your choice - with or without cheese</td>
+            <td>Smoked Brisket on thick-cut Texas Toast</td>
+          </tr>
+          <tr>
+            <td>Pickle, onion, tomato, and lettuce</td>
+            <td>Iceberg lettuce, tomatoes, peppers</td>
+            <td>Cole Slaw</td>
+          </tr>
+          <tr>
+            <td>Served with our house-made chips</td>
+            <td>Thousand Island or Ranch Dressing</td>
+            <td>Served with our famous thick-cut french fries</td>
+          </tr>
+          <tr>
+            <td>$8.95</td>
+            <td>Served with a dinner roll</td>
+            <td>$7.95</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>$6.95</td>
+            <td></td>
+          </tr>
+        <tbody>
+      </table>
+      <br />
+    </section>
+
+    <!-- Second table, menu2 -->
+    <section>
+      <table id="menu2" width="50%">
+        <caption>Drink Menu</caption>
+        <thead>
+          <tr>
+            <th>Beverage Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Root Beer</td>
+            <td>$3.00</td>
+          </tr>
+          <tr>
+            <td>Bottled Water</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td>Lemonade</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Iced Tea</td>
+            <td>$1.25</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+    </section>
+
+    <!-- Footer section, styled by the external style sheet -->
+    <footer>
+      <hr />
+      <p id="address">0317 Lobo Street, Elmhurst, NY, 11373</p>
+      <p id="phone">Phone: 212-854-9653</p>
+      <hr />
+    </footer>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
