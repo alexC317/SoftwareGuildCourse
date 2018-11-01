@@ -1,7 +1,7 @@
 /*
   Name: Alex Cepeda
   Date Created: 10/22/2018
-  Latest Revision:
+  Latest Revision: 11/1/2018
 */
 
 /* Styles the jumbotron */
@@ -11,22 +11,17 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
 }
-/* Styles the header sections
-header {
-  text-align: center;
-  font-size: 1.2em;
-  height: 100px;
-  padding: 10px 30px;
-
-}*/
 
 /* Styles the nav section */
 nav{
-  border-top: thick black solid;
-  border-bottom: thick black solid;
+  border: thick black solid;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 12px;
+
+  background-color: #576A92;
+  color: #fffeff;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Styles the anchor links in the nav bar when they have been visited */
@@ -35,7 +30,7 @@ nav a:visited{
 }
 
 /* Styles the anchor links in the nav bar when the pointer is hovering over it */
-nav a:hover {
+nav a:hover{
   font-weight: bold;
 }
 
@@ -45,8 +40,10 @@ nav a:active {
 }
 
 nav .btn{
+  border:thin black solid;
   background-color: #5b7d87;
   color: #fef9ff;
+  white-space: normal;
 }
 
 /* Sets the background color, text color, and text shadow for the section element */
@@ -58,6 +55,10 @@ nav .btn{
     width: 100%;
   }
 
+.carousel-item{
+  height:200px;
+  text-align: center;
+}
 
 /* Styles the footer sections */
 footer {
