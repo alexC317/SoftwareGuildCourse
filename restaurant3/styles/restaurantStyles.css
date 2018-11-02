@@ -37,6 +37,7 @@ nav a:active {
   text-decoration: none;
 }
 
+/* Styles the buttons inside the nav bar */
 nav .btn {
   border: thin black solid;
   background-color: #5b7d87;
@@ -54,20 +55,24 @@ section {
   width: 100%;
 }
 
+/* Styles the carousel */
 .carousel {
   height: 600px
 }
 
+/* Styles the items inside the carousel */
 .carousel-item {
   text-align: center;
   margin: auto;
 }
 
+/* Styles the table class */
 .table{
   text-align: center;
   margin: auto;
 }
 
+/* Styles the image tag */
 img{
   display: block;
   margin-left: auto;
