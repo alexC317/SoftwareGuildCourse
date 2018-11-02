@@ -55,16 +55,24 @@ section {
 }
 
 .carousel {
-  height: 300px;
+  height: 600px
 }
 
 .carousel-item {
   text-align: center;
+  margin: auto;
 }
 
 .table{
   text-align: center;
   margin: auto;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 /* Styles the footer sections */
