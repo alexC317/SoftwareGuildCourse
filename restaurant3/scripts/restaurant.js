@@ -1,3 +1,10 @@
+/*
+  Name: Alex Cepeda
+  Date Created: 11/2/2018
+  Latest Revision: 
+
+*/
+
 function validateInput()
 {
   var name = document.forms["contactFields"]["name"].value;
