@@ -29,82 +29,111 @@
   <main class="container-fluid">
 
     <!-- Header section, styled by the external style sheet -->
-    <header class = "jumbotron">
+    <header class="jumbotron">
       <h1>The Den</h1>
       <h2 class="text-center">Now Opening New Location!</h2>
       <h3 class="text-right font-italic">Est. 2018</h3>
     </header>
 
-      <!-- Nav section, styled by the external style sheet -->
-      <nav>
-        <div class="row justify-content-center">
-          <a class="btn badge-pill col-2" href="index.html"><i class="material-icons">home</i> Home</a>
-          <div class="col-2"></div>
-          <a class="btn badge-pill col-2" href="menu.html"><i class="material-icons">fastfood</i> Menu</a>
-          <div class="col-2"></div>
-          <a class="btn badge-pill col-2" href="contact.html"><i class="material-icons">people</i> Contact Us</a>
-        </div>
-      </nav>
+    <!-- Nav section, styled by the external style sheet -->
+    <nav>
+      <div class="row justify-content-center">
+        <a class="btn badge-pill col-2" href="index.html"><i class="material-icons">home</i> Home</a>
+        <div class="col-2"></div>
+        <a class="btn badge-pill col-2" href="menu.html"><i class="material-icons">fastfood</i> Menu</a>
+        <div class="col-2"></div>
+        <a class="btn badge-pill col-2" href="contact.html"><i class="material-icons">people</i> Contact Us</a>
+      </div>
+    </nav>
 
-      <!-- Section containing a picture and a description of the restaurant -->
-      <section>
-        <br />
-        <div>
-          <!-- Picture, styled by inline CSS -->
-          <img src="images/theDen400.jpg" alt="A delightful picture of a cafe" style="display: block; width:75%; margin:auto;">
-        </div>
-        <br />
-        <h2 class="text-center">Restaurant Description</h2>
-        <!-- Article containing the restaurant description -->
-        <article class="text-center" id="description">
-          <p>Welcome to The Den! Located in Elmhurst, the little spot is a great place to come in, relax, and grab a bite to eat! We serve classic comfort foods like burgers, sandwiches, accompanied by your choice of sides. Our fries and chips are
-            famous around these parts, and they are homemade for that authentic touch! We have a quiet and cozy environment, and free wi-fi, so you can bring your laptop and work on your things. Every Tuesday, we have an Open Coding Night, and
-            Wednesdays are our D&D Nights!</p>
-          <hr />
-        </article>
-      </section>
+    <!-- Section containing a picture and a description of the restaurant -->
+    <section>
+      <br />
 
-      <!-- Section with the carousel -->
-      <section>
-        <h2 class="text-center">News and Events</h2>
-        <div id=carouselControls class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="d-block w-100">We're opening up a new location on the upper west side!</p>
-            </div>
-            <div class="carousel-item">
-              <p class="d-block w-100">We're rolling out a new season menu, check it out!</p>
-              <ul>
-                <li>Peppermint Mocha</li>
-                <li>Crying Lightning</li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="carousel-item">
-              <p class="d-block w-100">The drink of the month is the the SG Special Brew!</p>
-            </div>
+      <div>
+        <!-- Picture, styled by inline CSS -->
+        <img src="images/theDen400.jpg" alt="A delightful picture of a cafe" style="display: block; width:50%; margin:auto;">
+      </div>
+
+      <br />
+
+      <!-- Article containing the restaurant description -->
+      <h2 class="text-center">Restaurant Description</h2>
+      <article class="text-center" id="description">
+        <p>Welcome to The Den! Located in Elmhurst, the little spot is a great place to come in, relax, and grab a bite to eat! We serve classic comfort foods like burgers, sandwiches, accompanied by your choice of sides. Our fries and chips are
+          famous around these parts, and they are homemade for that authentic touch! We have a quiet and cozy environment, and free wi-fi, so you can bring your laptop and work on your things. Every Tuesday, we have an Open Coding Night, and
+          Wednesdays are our D&D Nights!</p>
+      </article>
+
+      <br>
+
+    </section>
+
+    <!-- Section with the carousel -->
+    <section>
+      <br>
+      <h2 class="text-center">News and Events</h2>
+      <!-- Carousel displaying: New location announcement, seasonal menu, and drink of the month -->
+      <div id=carouselControls class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First item on the carousel -->
+          <div class="carousel-item active">
+            <p class="d-block w-100">We're opening up a new location on the upper west side!</p>
           </div>
-          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-            <span class=carousel-control-prev-icon aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+
+          <!-- Second item on the carousel -->
+          <div class="carousel-item">
+            <p class="d-block w-100">We're rolling out a new season menu, check it out!</p>
+
+            <table class="table table-bordered w-50">
+              <thead>
+                <tr>
+                  <th>Special</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Holly Jolly Sandwich</td>
+                  <td>$8.95</td>
+                </tr>
+                <tr>
+                  <td>Peppermint Mocha</td>
+                  <td>$4.95</td>
+                </tr>
+                <tr>
+                  <td>Hot Chocolate</td>
+                  <td>$2.95</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+          <!-- Third item on the carousel -->
+          <div class="carousel-item">
+            <p class="d-block w-100">The drink of the month is the the SG Special Brew!</p>
+          </div>
         </div>
-      </section>
 
-
-
-
+        <!-- Controls for the carousel -->
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+          <span class=carousel-control-prev-icon aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
 
     <!-- Footer section, styled by the external style sheet -->
     <footer>
-      <hr />
+      <hr>
       <p id="address">0317 Lobo Street, Elmhurst, NY, 11373</p>
       <p id="phone">Phone: 212-854-9653</p>
-      <hr />
+      <hr>
     </footer>
   </main>
 

@@ -3,9 +3,8 @@
   Date Created: 10/22/2018
   Latest Revision: 11/1/2018
 */
-
 /* Styles the jumbotron */
-.jumbotron{
+.jumbotron {
   background-color: #8D83B2;
   border: thick black solid;
   font-family: 'Open Sans', sans-serif;
@@ -13,24 +12,23 @@
 }
 
 /* Styles the nav section */
-nav{
+nav {
   border: thick black solid;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-bottom: 12px;
-
   background-color: #576A92;
   color: #fffeff;
   font-family: 'Roboto', sans-serif;
 }
 
 /* Styles the anchor links in the nav bar when they have been visited */
-nav a:visited{
-  color:red;
+nav a:visited {
+  color: red;
 }
 
 /* Styles the anchor links in the nav bar when the pointer is hovering over it */
-nav a:hover{
+nav a:hover {
   font-weight: bold;
 }
 
@@ -39,25 +37,34 @@ nav a:active {
   text-decoration: none;
 }
 
-nav .btn{
-  border:thin black solid;
+nav .btn {
+  border: thin black solid;
   background-color: #5b7d87;
   color: #fef9ff;
   white-space: normal;
 }
 
 /* Sets the background color, text color, and text shadow for the section element */
-  section{
-    background-color: #576A92;
-    color: #fffeff;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px black; /* Suggested by Jason Chan */
-    width: 100%;
-  }
+section {
+  background-color: #576A92;
+  color: #fffeff;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px black;
+  /* Suggested by Jason Chan */
+  width: 100%;
+}
 
-.carousel-item{
-  height:200px;
+.carousel {
+  height: 300px;
+}
+
+.carousel-item {
   text-align: center;
+}
+
+.table{
+  text-align: center;
+  margin: auto;
 }
 
 /* Styles the footer sections */
